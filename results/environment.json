@@ -1,0 +1,10 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pillow": "13.0.0",
+  "scipy": "1.17.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "machine": "x86_64",
+  "search_workers": 1,
+  "timing": "perf_counter wall seconds, image I/O and scoring excluded"
+}

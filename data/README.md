@@ -1,0 +1,7 @@
+# Source frame
+
+The figure holds an apple in profile at **00:07.500** in あにら (Anira)’s *Bad Apple!!* shadow-art video. The pointed hair, small stem and open space around the face make the shot sensitive to coarse sampling. The 480 × 360 RGB still in [frame0226.png](frame0226.png) was decoded from frame 226 in the 30 fps sequence. Frame 1 is at 0 seconds. The upstream JSON explicitly gives 7.5 seconds. [Original shadow video](https://www.nicovideo.jp/watch/sm8628149) · [Pinned frame data](https://github.com/SirPigari/bad-apple-api/blob/02584fdee35c5ba4d003402a20660377fbeccbb4/api/framedata/30fps/frame0226.json) · [Upstream extraction code](https://github.com/SirPigari/bad-apple-api/blob/02584fdee35c5ba4d003402a20660377fbeccbb4/api/generate.py)
+
+The upstream file encodes flattened RGB channel values as value/count runs. Its SHA-256 is `de4b4f9e1290de1ee8711b504ec4c173fd15294de46e94024937a2c9cb118cd3`. The decoded RGB bytes have SHA-256 `0f81fa82dcee8c7a8725cb2d93adbabce0baac0a93939ba7f561532bf684e9ff`. Run `python tools/fetch_frame.py` to recover this single still independently. The committed PNG is sufficient for all experiments offline.
+
+The common center crop retains the full 480 × 360 composition. The benchmark saves its grayscale version, then applies Pillow BOX downsampling and thresholds values below 128 to black. The project’s code license applies to the implementation. The source artwork is credited to its original creators.
